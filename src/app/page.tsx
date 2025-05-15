@@ -9,6 +9,7 @@ import CasePage from "@/components/Landing/Case";
 import TestimonialPage from "@/components/Landing/Testimonial";
 import FrequentlyPage from "@/components/Landing/Frequently";
 import { IoIosArrowUp } from "react-icons/io";
+import JoinUs from '@/components/Landing/getInTouch';
 
 
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
       <HomePage />
       <AboutPage />
       <FeaturesPage />
+      <JoinUs />
       <CasePage />
       <TestimonialPage />
       <FrequentlyPage />

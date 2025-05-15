@@ -31,17 +31,17 @@ const Subscription: React.FC = () => {
 
     return (
         <div className="relative">
-            <div className="container mx-auto pt-[145px] grid grid-cols-2 gap-2">
+            <div className="max-w-[84rem] px-5 container mx-auto pt-[50px] sm:pt-[60px] md:pt-[85px] lg:pt-[100px] md:gap-[40px] xl:gap-0 grid grid-cols-1 md:grid-cols-2">
                 <div>
                     <p className="text-gradient-green font-poppins font-semibold text-[32px]">
                         One-Time Payment
                     </p>
-                    <p className="text-green font-poppins font-normal mt-[32px]">
+                    <p className="text-green font-poppins font-normal mt-[19px] md:mt-[20px] lg:mt-[26px] xl:mt-[32px]">
                         Add Personal Details
                     </p>
                     <form className="mt-[12px]">
                         <div className="space-y-4">
-                            <div className=" border border-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+                            <div className=" border border-gray-100 rounded-xl px-4 py-2 sm:py-3 md:py-2 lg:py-3 xl:py-4 flex items-center gap-3">
                                 <GoPerson className="text-gray-100" />
                                 <input
                                     type="text"
@@ -49,7 +49,7 @@ const Subscription: React.FC = () => {
                                     className="w-full outline-none border-none placeholder-gray-100"
                                 />
                             </div>
-                            <div className=" border border-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+                            <div className=" border border-gray-100 rounded-xl px-4 py-2 sm:py-3 md:py-2 lg:py-3 xl:py-4 flex items-center gap-3">
                                 <GoPerson className="text-gray-100" />
                                 <input
                                     type="text"
@@ -57,7 +57,7 @@ const Subscription: React.FC = () => {
                                     className="w-full outline-none border-none placeholder-gray-100"
                                 />
                             </div>
-                            <div className=" border border-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+                            <div className=" border border-gray-100 rounded-xl px-4 py-2 sm:py-3 md:py-2 lg:py-3 xl:py-4 flex items-center gap-3">
                                 <MdOutlineMail className="text-gray-100" />
                                 <input
                                     type="email"
@@ -76,7 +76,7 @@ const Subscription: React.FC = () => {
                                 <input
                                     type="tel"
                                     placeholder="Enter Phone number"
-                                    className="w-full p-4 pl-20 border border-gray-100 rounded-lg outline-none"
+                                    className="w-full px-4 py-2 sm:py-3 md:py-2 lg:py-3 xl:py-4 pl-20 border border-gray-100 rounded-lg outline-none"
                                 />
                             </div>
                         </div>
@@ -85,7 +85,7 @@ const Subscription: React.FC = () => {
                             Add Payment Details
                         </p>
                         <div className="space-y-4">
-                            <div className=" border border-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+                            <div className=" border border-gray-100 rounded-xl px-4 py-2 sm:py-3 md:py-2 lg:py-3 xl:py-4 flex items-center gap-3">
                                 <input
                                     type="text"
                                     placeholder="1234 1234 1234 1234"
@@ -103,12 +103,12 @@ const Subscription: React.FC = () => {
                                 <input
                                     type="text"
                                     placeholder="MM / YY"
-                                    className="w-full p-4 border border-gray-100 rounded-xl outline-none"
+                                    className="w-full px-4 py-2 sm:py-3 md:py-2 lg:py-3 xl:py-4 border border-gray-100 rounded-xl outline-none"
                                 />
                                 <input
                                     type="text"
                                     placeholder="CVC"
-                                    className="w-full p-4 border border-gray-100 rounded-xl outline-none"
+                                    className="w-full px-4 py-2 sm:py-3 md:py-2 lg:py-3 xl:py-4 border border-gray-100 rounded-xl outline-none"
                                 />
                             </div>
                         </div>
@@ -117,14 +117,14 @@ const Subscription: React.FC = () => {
                         <div className="flex gap-[12px] mt-[32px]">
                             <button
                                 type="button"
-                                className="w-[400px] h-[56px] border border-gray-100 rounded-xl text-gray-150 text-center font-poppins font-normal"
+                                className="w-full h-[40px] sm:h-[46px] md:h-[40px] lg:h-[52px] xl:h-[56px] border border-gray-100 rounded-xl text-gray-150 text-center font-poppins font-normal"
                             >
                                 Cancel
                             </button>
                             <button
                                 type="button"
                                 onClick={toggleModal}
-                                className=" bg-green text-white rounded-lg h-[56px] text-center font-extrabold font-poppins w-full"
+                                className=" bg-green text-white rounded-lg h-[40px] sm:h-[46px] md:h-[40x] lg:h-[52px] xl:h-[56px] text-center font-extrabold font-poppins w-full"
                             >
                                 Subscribe Now
                             </button>
@@ -140,17 +140,17 @@ const Subscription: React.FC = () => {
                         alt='mockup'
                         width={495}
                         height={406}
-                        className="w-[495px] h-[406px]"
+                        className="w-[495px] md:h-[500px] lg:h-[406px]"
                     />
                 </div>
             </div>
-            <div className="relative mb-[130px]">
+            <div className="relative mb-[130px] hidden md:block normal-nums">
                 <Image
                     src='/images/sub_white.png'
                     alt="admin"
                     width={1183}
                     height={560}
-                    className="absolute right-0 top-[-150px] w-[200px] h[200px]"
+                    className="absolute right-0 top-[-150px] w-[120px] lg:w-[150px] xl:w-[200px] h-[200px] lg:h-[250px] xl:h-[560px]"
                 />
             </div>
             <Image
@@ -166,7 +166,7 @@ const Subscription: React.FC = () => {
                 <>
                     <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={toggleModal}></div>
                     <div className="fixed inset-0 z-50 flex items-center justify-center">
-                        <div className="w-[600px] h-[600px] rounded-[24px] pt-[29px] bg-white shadow-2xl relative">
+                        <div className="w-[600px] h-[600px] rounded-[24px] mx-[20px] pt-[29px] bg-white shadow-2xl relative">
                             <div className="flex justify-end pr-[29px]">
                                 <RxCross2
                                     className="text-green cursor-pointer text-[20px]"

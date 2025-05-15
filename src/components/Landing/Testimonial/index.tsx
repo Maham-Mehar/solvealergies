@@ -23,7 +23,7 @@ const Testimonial: React.FC = () => {
         centerPadding: "20%",
         arrows: false,
         beforeChange: (current: number, next: number) => {
-            setCurrentSlide(next); 
+            setCurrentSlide(next);
         },
     };
 
@@ -37,11 +37,11 @@ const Testimonial: React.FC = () => {
                 {testimonials.map((item, index) => (
                     <div
                         key={item.id}
-                        className={`transition-all duration-500 px-6 mt-[47px] ${currentSlide === index ? "scale-110 z-10" : "scale-95 opacity-80"
+                        className={`transition-all duration-50 px-3 0 sm:px-3 md:px-4 lg:px-6 mt-[47px] ${currentSlide === index ? "scale-110 z-10" : "scale-95 opacity-80"
                             }`}
                     >
                         <div
-                            className={`bg-white-100 rounded-[50px] py-[14px] px-[14px] sm:py-[21px] sm:px-[25px] md:py-[41px] md:px-[38px] shadow-lg ${currentSlide === index ? "shadow-3xl" : "shadow-md mt-12"
+                            className={`bg-white-100 rounded-[17px] sm:rounded-[27px] md:rounded-[32px] lg:rounded-[50px] py-[14px] px-[8px] sm:py-[21px] sm:px-[px] md:py-[41px] md:px-[24px] lg::px-[38px] shadow-lg ${currentSlide === index ? "shadow-3xl" : "shadow-md mt-12"
                                 } relative`}
                         >
                             {/* Center Border */}

@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
         <>
             <nav
                 className={`fixed left-0 px-3 right-0 z-20 flex justify-between items-center ${isScrolled
-                    ? "max-w-full mx-0 px-[85px] bg-white shadow-lg py-4 rounded-lg top-0"
+                    ? "max-w-full mx-0 px-[7px] xl:px-[85px] bg-white shadow-lg py-4 rounded-lg top-0"
                     : "max-w-[86rem] mx-auto bg-transparent top-5"
                     }`}
             >

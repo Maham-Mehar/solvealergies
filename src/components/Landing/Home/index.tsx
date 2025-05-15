@@ -11,15 +11,15 @@ const Home: React.FC = () => {
             <div className="relative overflow-hidden pt-[120px] sm:pt-[160px]" id="home-section">
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-12 MT-10 lg:gap-4">
                     <div className="px-2 flex flex-col items-center justify-center sm:px-0">
-                        <p className="text-green text-[30px] px-3 sm:text-[42px] text-center lg:text-start md:text[54px] lg:text-[64px] font-semibold font-poppins leading-[35px] sm:leading-[70px] max-w-full sm:max-w-[36rem]">
+                        <p className="text-green px-4 text-[30px] sm:text-[42px] text-center lg:text-start md:text[54px] xl:text-[64px] font-semibold font-poppins leading-[35px] sm:leading-[70px] max-w-full sm:max-w-[36rem]">
                             The greatest investment you can make is in <u className="text-gradient-green">Yourself</u>
                         </p>
-                        <div className="btn-gradient-border mt-[50px] sm:mt-[81px] h-[56px] w-[330px] text-start me-0 lg:me-8 sm:w-[450px] xl:w-[500px] rounded-full">
+                        <div className="btn-gradient-border mt-[50px] sm:mt-[81px] h-[56px] w-[330px] text-start me-0 lg:me-16 xl:me-8 sm:w-[400px] xl:w-[500px] rounded-full">
                             <button className="font-bold text-[21px] sm:text-[24ox] text-center text-green font-poppins">
                                 Get App Access
                             </button>
                         </div>
-                        <div className="btn-gradient-border mt-[30px] h-[56px] w-[330px] text-start me-0 lg:me-8 sm:w-[450px] xl:w-[500px] rounded-full">
+                        <div className="btn-gradient-border mt-[30px] h-[56px] w-[330px] text-start lg:me-16 xl:me-8 sm:w-[400px] xl:w-[500px] rounded-full">
                             <button className="font-bold text-[24px] text-center text-green font-poppins">
                                 Watch Webinar
                             </button>
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                     </div>
                     {/* Right Image */}
                     <div className="lg:absolute relative lg:right-[-150px] right-0 top-3">
-                        <Image src="/images/hero.png" alt="" width={892} height={888} className="" />
+                        <Image src="/images/hero.png" alt="" width={892} height={888} className="xl:w-[892px] lg:w-[760px]" />
                     </div>
 
                 </div>

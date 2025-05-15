@@ -27,9 +27,9 @@ const Case: React.FC = () => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 768, 
+                breakpoint: 768,
                 settings: {
-                    centerPadding: "10%", 
+                    centerPadding: "10%",
                 },
             },
         ],
@@ -42,14 +42,14 @@ const Case: React.FC = () => {
             </p>
             <Slider {...settings}>
                 {casestudy.map((item) => (
-                    <div key={item.id} className="mt-[44px] px-4 cursor-pointer" onClick={() => handleItemClick(item.id)}>
+                    <div key={item.id} className="mt-[44px] px-2 md:px-4 cursor-pointer" onClick={() => handleItemClick(item.id)}>
                         {/* CHALLENGES */}
-                        <div className="bg-green-50 py-[38px] pl-[16px] sm:pl-[24px] rounded-lg">
-                            <div className="flex gap-[20px] sm:gap-[10px] lg:gap-[14px] xl:gap-[20px] items-center">
+                        <div className="bg-green-50 h-[146px] pl-[16px] sm:pl-[24px] rounded-lg flex items-center">
+                            <div className="flex-none lg:flex gap-[10px] sm:gap-[10px] md:gap-[55px] lg:gap-[65px] xl:gap-[80px] text-white items-center">
                                 <h2 className="font-poppins font-bold text-[14px] sm:text-[16px] lg:text-[20px] xl:text-[34px] 2xl:text-[36px] text-white">
                                     {item.title}
                                 </h2>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 sm:gap-x-4 lg:gap-x-4 xl:gap-x-4 2xl:gap-x-3.5">
+                                <div className="grid grid-cols-2 mt-4 items-start justify-start sm:mt-4 md:mt-4 lg:mt-0 sm:grid-cols-3 lg:grid-cols-3 gap-y-4 gap-x-4 sm:gap-x-4 lg:gap-x-4 xl:gap-x-4 2xl:gap-x-3.5">
                                     {item.bullets.map((bullet, index) => (
                                         <span
                                             key={index}
@@ -63,7 +63,7 @@ const Case: React.FC = () => {
                         </div>
 
 
-                        <div className="flex justify-between sm:gap-[6px] lg:gap-[10px] xl:gap-[14px] 2xl:gap-[17px] mt-[30px]">
+                        <div className="flex justify-between gap-[2px] sm:gap-[6px] lg:gap-[10px] xl:gap-[14px] 2xl:gap-[17px] mt-[30px]">
                             {/* SESSION PLAN */}
                             <div>
                                 <h3 className="font-poppins text-[10px] sm:text-[12px] lg:text-[14px] xl:text-[20px] 2xl:text-[24px] font-bold text-black-100">{item.titles}</h3>
