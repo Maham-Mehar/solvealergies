@@ -30,7 +30,6 @@ const JoinUs: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you can handle the form submission logic (e.g., send data to an API)
         console.log("Form submitted:", formData);
         setSubmitted(true);
     };

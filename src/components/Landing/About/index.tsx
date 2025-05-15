@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { appfeatures } from "@/data/Landing";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { appfeatures } from "@/data/Landing";
 
 const About: React.FC = () => {
     const settings = {

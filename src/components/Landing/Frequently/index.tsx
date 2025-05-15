@@ -1,7 +1,7 @@
 "use client";
+import { faq } from "@/data/Landing";
 import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { faq } from "@/data/Landing";
 const Frequently: React.FC = () => {
   const [activeId, setActiveId] = useState<string>("1");
 
